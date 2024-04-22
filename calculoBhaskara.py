@@ -2,8 +2,8 @@ import math
 a, b, c = map(int, input("digite três numeros seguidos para os valores a, b e c: ").split())
 dlt = (b**2) - (4 * a * c)
 print(f"Valor de delta é {dlt}")
-if dlt < 0:
-    print(f"Não possui raiz real")  
+if dlt < 0 or a == 0:
+    print(f"Não possui raiz real")
 elif dlt == 0:
     print("Possui uma das raízes iguais a 0.00")
 else:
